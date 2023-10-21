@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { getTouchEventData } from "../../lib/dom";
 import { getRefValue, useStateRef } from "../../lib/hooks";
 import "./Swiper.css";
@@ -78,11 +78,24 @@ export const Swiper = ({ imageList }: Props) => {
     window.addEventListener("mouseup", onTouchEnd);
   };
 
-  const indicatorOnClick = (index: number) => {
-    const containerEL = getRefValue(containerRef);
-    setCurrentIndex(index);
-    setOffsetX(-(containerEL.offsetWidth * index));
-  };
+  const indicatorOnClick = useCallback(
+    (index: number) => {
+      const containerEL = getRefValue(containerRef);
+      setCurrentIndex(index);
+      setOffsetX(-(containerEL.offsetWidth * index));
+    },
+    [setOffsetX]
+  );
+  useEffect(() => {
+    const handleResize = () => {
+      indicatorOnClick(currentIndex);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [currentIndex, indicatorOnClick]);
+
   return (
     <div
       className="swiper-container"
