@@ -6,11 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { ImageSlider } from "./components/common/ImageSlider";
 import { Slides } from "./const/slides";
-import { FurnishingSection } from "./components/FurnishingSection";
+
 import {
   FooterSection,
+  FurnishingSection,
   HouseTypesPage,
-} from "./components/sections/sections.js";
+} from "./components/sections/sections";
 
 function App() {
   return (

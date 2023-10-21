@@ -6,10 +6,10 @@ import {
   Floor2BathroomSlides,
   Floor2BedroomSlides,
   Floor2SmallSlides,
-} from "../const/slides";
+} from "../../../const/slides";
 import styles from "./FurnishingSection.module.scss";
-import { Swiper } from "./swiper/Swiper";
-import { Tabs } from "./tabs/Tabs";
+import { Swiper } from "../../swiper/Swiper";
+import { Tabs } from "../../tabs/Tabs";
 
 export const FurnishingSection = () => {
   return (
