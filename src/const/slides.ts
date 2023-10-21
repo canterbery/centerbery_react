@@ -1,7 +1,7 @@
 export const Slides = [
-  { imageSrc: "/assets/town.jpg", imageAlt: "bathroom1.jpg" },
-  { imageSrc: "/assets/town2.jpg", imageAlt: "bathroom1.jpg" },
-  { imageSrc: "/assets/town3.jpg", imageAlt: "bathroom1.jpg" },
+  { imageSrc: "assets/town.jpg", imageAlt: "bathroom1.jpg" },
+  { imageSrc: "assets/town2.jpg", imageAlt: "bathroom1.jpg" },
+  { imageSrc: "assets/town3.jpg", imageAlt: "bathroom1.jpg" },
 ];
 
 export const Floor1BathroomSlides = [
