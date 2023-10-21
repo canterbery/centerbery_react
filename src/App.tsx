@@ -1,14 +1,16 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import logo from "./assets/logo_img.png";
 import logo_name from "./assets/logo_name.png";
-import { HouseTypesPage } from "./components/HouseTypesPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { ImageSlider } from "./components/common/ImageSlider";
 import { Slides } from "./const/slides";
 import { FurnishingSection } from "./components/FurnishingSection";
-import { FooterSection } from "./components/sections/footer/footer";
+import {
+  FooterSection,
+  HouseTypesPage,
+} from "./components/sections/sections.js";
 
 function App() {
   return (

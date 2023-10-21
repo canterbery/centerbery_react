@@ -7,7 +7,7 @@ import {
   Floor2BedroomSlides,
   Floor2SmallSlides,
 } from "../const/slides";
-import styles from "./FurnishingSection.module.css";
+import styles from "./FurnishingSection.module.scss";
 import { Swiper } from "./swiper/Swiper";
 import { Tabs } from "./tabs/Tabs";
 

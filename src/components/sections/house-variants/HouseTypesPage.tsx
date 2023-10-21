@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import styles from "./HouseTypesPage.module.css";
+import styles from "./HouseTypesPage.module.scss";
 
 type Props = {
   house: {

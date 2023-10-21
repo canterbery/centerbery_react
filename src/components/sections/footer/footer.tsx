@@ -1,5 +1,5 @@
 import { FooterMap } from "../../FooterMap";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 const FooterSection = () => {
   return (
     <div className={styles.wrapper}>
