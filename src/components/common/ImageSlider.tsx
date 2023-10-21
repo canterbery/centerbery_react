@@ -3,12 +3,14 @@ import styles from "./ImageSlider.module.css";
 
 type ImageSliderProps = {
   slides: { imageSrc: string; imageAlt: string }[];
-  autoPlayInterval: number;
+  autoPlayInterval?: number;
+  showControls?: boolean;
 };
 
 export const ImageSlider: React.FC<ImageSliderProps> = ({
   slides,
   autoPlayInterval,
+  showControls,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -25,12 +27,26 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNext, autoPlayInterval * 1000);
-    return () => clearInterval(interval);
+    let interval: undefined | NodeJS.Timer = undefined;
+    if (autoPlayInterval) {
+      interval = setInterval(goToNext, autoPlayInterval * 1000);
+    }
+
+    return interval ? () => clearInterval(interval) : () => {};
   });
 
   return (
     <div className={styles.slider}>
+      {showControls && (
+        <div>
+          <div onClick={goToPrevious} className={styles.leftArrow}>
+            ❰
+          </div>
+          <div onClick={goToNext} className={styles.rightArrow}>
+            ❱
+          </div>
+        </div>
+      )}
       <div
         className={styles.slide}
         style={{ backgroundImage: `url(${slides[currentIndex].imageSrc})` }}
