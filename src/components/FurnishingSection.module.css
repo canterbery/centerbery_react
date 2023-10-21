@@ -1,0 +1,40 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.desc_text {
+  font-family: "Syncopate", sans-serif;
+  color: white;
+  letter-spacing: 0.3vw;
+  line-height: 1.2;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .desc_text {
+    font-size: 4vw;
+  }
+  .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+  touch-action: pan-y;
+}
+
+.swiper-list {
+  display: flex;
+  min-width: 100%;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 95%;
+  transition: transform 0.3s ease-out;
+}
+
+.swiper-list.swiping {
+  transition: none;
+}
+.swiper-indicator {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.swiper-indicator-item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #cccccccc;
+  cursor: pointer;
+}
+.swiper-indicator-item.active {
+  background-color: #7777;
+}
