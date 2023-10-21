@@ -8,7 +8,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { ImageSlider } from "./components/common/ImageSlider";
 import { Slides } from "./const/slides";
 import { FurnishingSection } from "./components/FurnishingSection";
-import { FooterMap } from "./components/FooterMap";
+import { FooterSection } from "./components/sections/footer/footer";
 
 function App() {
   return (
@@ -96,7 +96,7 @@ function App() {
       />
 
       <FurnishingSection />
-      <FooterMap />
+      <FooterSection />
     </>
   );
 }

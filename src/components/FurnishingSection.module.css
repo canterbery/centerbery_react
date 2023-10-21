@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: lightgray;
   position: relative;
 }
 .container {
