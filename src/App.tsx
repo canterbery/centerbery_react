@@ -78,7 +78,7 @@ function App() {
           parking: "2 паркомісця",
           kitchen: "кухня студія",
           hardware: "газовий та електрокотел",
-          imgUrl: "/assets/120m.jpg",
+          imgUrl: "assets/120m.jpg",
           slideDirection: "left",
         }}
       />
@@ -93,7 +93,7 @@ function App() {
           parking: "1 паркомісце",
           kitchen: "кухня студія",
           hardware: "газовий та електрокотел",
-          imgUrl: "/assets/100m.jpg",
+          imgUrl: "assets/100m.jpg",
           slideDirection: "right",
         }}
       />
