@@ -8,13 +8,14 @@
 .container {
   display: flex;
   justify-content: center;
-  height: 90vh;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   flex-direction: column;
+  gap: 10px;
+  color: white;
 }
 
-.desc_text {
+.title {
   font-family: "Syncopate", sans-serif;
   color: #764e23;
   letter-spacing: 0.3vw;
@@ -22,4 +23,100 @@
   font-size: 2vw;
   font-weight: 700;
   margin-bottom: 5px;
+  text-align: center;
+  padding: 30px 0 20px;
+}
+.location {
+  display: flex;
+
+  padding: 10px 10px 20px;
+  gap: 10px;
+  font-size: 18px;
+}
+.address {
+  flex-shrink: 0;
+  flex-basis: 45%;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  background-color: #242424;
+  border: 2px solid white;
+}
+.contacts,
+.slogan {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts {
+  color: #764e23;
+  text-align: end;
+}
+
+.bottomTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 98%;
+  }
+  .location {
+    font-size: 16px;
+  }
+
+  .contacts,
+  .slogan {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .title {
+    font-size: 4vw;
+  }
+  .location {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contacts,
+  .slogan {
+    font-size: 16px;
+  }
+
+  .bottomTitle {
+    width: 90%;
+    padding: 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .contacts,
+  .slogan {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bottomTitle {
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+  }
+  .contactsWrapper {
+    display: flex;
+    gap: 10px;
+  }
+  .contacts,
+  .slogan {
+    font-size: 12px;
+  }
 }

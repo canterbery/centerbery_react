@@ -4,6 +4,8 @@
   overflow: hidden;
   height: 100%;
   touch-action: pan-y;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .swiper-list {

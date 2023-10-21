@@ -26,48 +26,12 @@ export const FurnishingSection = () => {
       </h1>
 
       <div className={styles.container}>
-        <Tabs
-          tabs={[
-            {
-              name: "Санвузол",
-              content: <Swiper imageList={Floor1BathroomSlides} />,
-            },
-            {
-              name: "Подвір'я",
-              content: <Swiper imageList={Floor1GardenSlides} />,
-            },
-            {
-              name: "Вітальня",
-              content: <Swiper imageList={Floor1LivingRoomSlides} />,
-            },
-            {
-              name: "Кухня",
-              content: <Swiper imageList={Floor1KitchenSlides} />,
-            },
-          ]}
+        <Swiper
+          imageList={Floor1LivingRoomSlides.concat(Floor1KitchenSlides).concat(
+            Floor2BedroomSlides
+          )}
         />
-      </div>
-      <div className={styles.container}>
-        <Tabs
-          tabs={[
-            {
-              name: "Ванна кімната",
-              content: <Swiper imageList={Floor2BathroomSlides} />,
-            },
-            {
-              name: "Дитяча або кабінет",
-              content: <Swiper imageList={Floor2SmallSlides} />,
-            },
-            {
-              name: "Головна спальня",
-              content: <Swiper imageList={Floor2BedroomSlides} />,
-            },
-            {
-              name: "Гардеробна",
-              content: <Swiper imageList={Floor1KitchenSlides} />,
-            },
-          ]}
-        />
+        ,
       </div>
     </div>
   );
