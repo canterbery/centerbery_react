@@ -20,7 +20,7 @@ const FooterSection = () => {
         <div className={styles.bottom}>
           <div className={styles.bottomTitle}>
             <p className={styles.slogan}>
-              ЖК "Кентербері" - дом де живе щастя!
+              ЖК "Кентербері" - дім де живе щастя!
             </p>
             <div className={styles.contactsWrapper}>
               <p className={styles.contacts}>+38 (050) 302 26 19</p>
